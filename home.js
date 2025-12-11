@@ -43,4 +43,5 @@ submitBtn.onclick = function() {
 // action_1.onclick = function() {
 // document.querySelector('.changed').textContent = 'THIS HEADING HAS CHANGED BY JAVASCRIPT';
 // }
+window,alert('muslim');
 
