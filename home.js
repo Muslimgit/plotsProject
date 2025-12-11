@@ -14,6 +14,7 @@ submitBtn.onclick = function() {
   const names = fullName.value;
   const fullName_td = document.querySelector('.td-fullname');
   fullName_td.innerHTML = names;
+  document.querySelector('.changed').textContent = names;
   document.querySelector('#fullName').value = '';
   // emailAddress input
   const email = emailAddress.value;
@@ -35,8 +36,11 @@ submitBtn.onclick = function() {
   if (phoneNumber.value.startsWith(' ')) {
     window.alert('no');
   } else {
-    window.alert('yes');
+    // window.alert('yes');
   }
 }
-  
+// const action_1 = document.querySelector('.bk');
+// action_1.onclick = function() {
+// document.querySelector('.changed').textContent = 'THIS HEADING HAS CHANGED BY JAVASCRIPT';
+// }
 
