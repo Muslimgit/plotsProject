@@ -39,9 +39,9 @@ submitBtn.onclick = function() {
     // window.alert('yes');
   }
 }
-// const action_1 = document.querySelector('.bk');
-// action_1.onclick = function() {
-// document.querySelector('.changed').textContent = 'THIS HEADING HAS CHANGED BY JAVASCRIPT';
-// }
+const action_1 = document.querySelector('.bk');
+action_1.onclick = function() {
+document.querySelector('.changed').textContent = 'THIS HEADING HAS CHANGED BY JAVASCRIPT';
+}
 
 
