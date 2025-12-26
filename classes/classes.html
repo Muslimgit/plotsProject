@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .hidden{
+             display: none;
+        }
+        .modal {
+            position: absolute;
+            z-index: 12;
+        }
+    </style>
+</head>
+<body>
+    <button class="show-modal">show modal</button>
+
+    <div class="modal hidden" style="background-color: aquamarine; padding: 7px 10px 7px 10px; margin-top: 22px; width: 900px;">
+      <button class="closeBtn">Close</button>
+      <h1>This is a sample modal</h1>
+      <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis possimus porro, nemo a quidem, dolorem sit minima nihil nam voluptatibus aliquam aspernatur alias expedita  optio impedit? Corrupti, quas..</p>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <h1>This is a sample modal</h1>
+      <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis possimus porro, nemo a quidem, dolorem sit minima nihil nam voluptatibus aliquam aspernatur alias expedita  optio impedit? Corrupti, quas..</p>
+
+    <script>
+        const closeBtn = document.querySelector('.closeBtn');
+        const show_modal = document.querySelector('.show-modal');
+        const modal = document.querySelector('.modal');
+        const overlay = document.querySelector('.overlay'); 
+        show_modal.addEventListener('click', function() {
+            // alert('j');
+            modal.classList.remove('hidden');
+            overlay.classList.remove('hidden');
+        });
+        closeBtn.addEventListener('click', function() {
+            modal.classList.add('hidden');
+        })
+         overlay.addEventListener('click', function () {
+             modal.classlist.add('hidden');
+        });
+    </script>
+</body>
+</html>
