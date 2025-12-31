@@ -26,6 +26,7 @@ submitBtn.onclick = function() {
       window.alert(`Dear ${names}, Your details has stored on GREEN table below. Click OK to continue`);
 
     }
+    
   // const ifNoName = !names? 'Unnamed' : console.log('your name is ' + names);
   // emailAddress input
   const email = emailAddress.value;
@@ -85,4 +86,50 @@ bookSiteVisit.addEventListener('click', function() {
 
 // const lastAnswer = myltiply(first_user, second_user);
 // console.log(`The number you have entered is ${lastAnswer}`);
+
+// ---THIS IS ARRAY DESTRUCTURING CHALLENGE---
+const restaurant = {
+  name_: 'Muslim',
+  surname: 'Mkonja',
+  friends: ['chengo', 'domi', 'paul', 'nizzahny', 'yuzzo'],
+  favoriteFood: ['ugali', 'pizza', 'bagga', 'rice', 'chips'],
+  choice: function (first, second) {
+    return [this.friends[first], this.favoriteFood[second]];
+  }
+}
+console.log(restaurant.friends[1] = 'Azizi');
+let [d, c] = restaurant.choice(1, 4);
+console.log(d, c);
+[d, c] = [c, d];
+console.log(d, c);
+// ---ARRAY DESTRUCTURING---
+const arr = ['Joyce', 2002, true];
+let [x, y, z] = arr;
+console.log(2025 - y);
+[x, y, z] = [y, x, z];
+console.log('mgogosi' + ' ' + y);
+// ----DEFAULT ARRAY VALUE----
+[5, 6, 7];
+const [w, x_, y_, $z = 3] = [5, 6, 7];
+console.log(w, x_, y_, $z);
+// ----NESTED ARRAY----
+const arr_ = [1, 2, 3, ['muslim', 2002]];
+
+const [o, , , [m, mb]] = arr_;
+console.log(o, m, mb);
+console.log(2025 - mb)
+//++----------------------++//
+const ar = [1, 2, 3, 4];
+const a = ar[0];
+const b = ar[1];
+const c_ = ar[2];
+const d_ = ar[3];
+
+console.log(a, b, c_, d_);
+
+const arNested = [1, 2, 3, [10, 11]];
+const [l, , , [i, j]] = arNested;
+console.log(l, i, j);
+
+    
 
